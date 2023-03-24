@@ -12,8 +12,10 @@ public class App {
         if(separarDni[1].equals(listaLetrasDni[index])){
             System.out.println("El DNI es válido"); 
         } else {
-            System.out.println("El DNI no es valido"); 
+            while(separarDni[1] != (listaLetrasDni[index])) {
+                System.out.println("El DNI no es valido");
+                Consola.readText("Escribe tu DNI en formato '23456789-A': ");
+            }
         }
-
     }
 }
