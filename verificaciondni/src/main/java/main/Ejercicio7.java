@@ -13,6 +13,7 @@ public class Ejercicio7 {
                 System.out.println("La contraseña no es correcta. Tienes " + (i - 1)+ " intentos: ");
             }else{
                 break;
+                
             }
         }
     }
