@@ -5,6 +5,7 @@ import java.util.List;
 
 import lombok.Data;
 
+
 @Data
 public class Pagina{
     List<ItemPagina> lista = new ArrayList<>();
@@ -40,8 +41,10 @@ public class Pagina{
             }
         }
     }
-}
 @FunctionalInterface
-interface Sustituidor{
+public interface Sustituidor{
     String modificar(Documento doc);
 }
+}
+
+

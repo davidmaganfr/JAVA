@@ -49,9 +49,13 @@ public class App {
         pagina2.addImg(Imagen.of("img3.jpg", 28));
         album.addPag(pagina2);
 
+        pagina1.changeTitulo(y->y.getTitulo().toUpperCase());
+        album.selectPaginas(img -> img.getZoom() > 25);
         System.out.println(album.toString());
 
 
     }
 
 }
+
+
