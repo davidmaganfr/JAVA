@@ -47,8 +47,6 @@ public class Ejercicio6 {
             System.out.println("Numero obtenido en el hilo: " + num +
                     " Numero MAYOR obtenido en la tarea: " +
                     listaNumeros.stream().mapToInt(n -> n).max().orElse(0));
-            System.out.println(listaNumeros.size());
-            Thread.currentThread().interrupt();
         };
 
         for (int i = 0; i < 200; i++) {
@@ -57,7 +55,8 @@ public class Ejercicio6 {
             var hilo = ForkJoinTask.adapt(tarea);
             hilo.fork();
         }
-        System.console().readLine();
+        System.console().readLine(); //para finalizar la ejecucion
+
 
     }
 
